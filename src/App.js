@@ -1,5 +1,11 @@
+import Api from "./api/api";
+
 const App = () => {
-  return <div>InstaDog</div>;
+  return (
+    <div>
+      <Api />
+    </div>
+  );
 };
 
 export default App;
