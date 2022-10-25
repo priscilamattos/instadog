@@ -9,7 +9,7 @@ export const UserPost = () => {
   function handleSubmit(event) {
     event.preventDefault();
 
-    fetch("https://dogsapi.origamid.dev/json/api/user", {
+    fetch("https://api.thedogapi.com/v1/images/search", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
