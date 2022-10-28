@@ -33,7 +33,6 @@ const UserContextProvider = ({ children }) => {
       );
     }
   };
-  getDogs();
 
   return (
     <UserContext.Provider value={{ dogs, getDogs, setDogs }}>
