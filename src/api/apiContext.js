@@ -7,27 +7,31 @@ const UserContextProvider = ({ children }) => {
   const [dogs, setDogs] = useState([]);
 
   //fetch dog images
-  const getDogs = (dogs) => {
-    const newDogs = [...dogs];
-    newDogs.forEach((dog) => {
-      const fetchImages = async () => {
-        try {
-          const response = await axios({
-            method: "GET",
-            url: "https://thedogapi.com/v1/images/search?q=",
-            params: {
-              format: "json",
-              method: "GET",
-              api_key:
-                "live_jINPmFZwMC3VVVjfdqbDQhxlGjcgq6fpt0aiZjYIbcQPY5ZH2zdbiWx7eCFmbFRh",
-            },
-          });
-          dogs.dogImages = response.data.id;
-        } catch (error) {}
-      };
-      fetchImages(dogs.id);
-    });
-    setDogs(newDogs);
+  const getDogs = async (dogs) => {
+    try {
+      const response = await axios({
+        method: "GET",
+        url: "https://api.thedogapi.com/v1/images/search",
+        headers: {
+          "Content-type": "application/json",
+          "x-api-key":
+            "live_jINPmFZwMC3VVVjfdqbDQhxlGjcgq6fpt0aiZjYIbcQPY5ZH2zdbiWx7eCFmbFRh",
+        },
+        params: {
+          limit: 5,
+        },
+      });
+      setDogs(response.data);
+      console.log(
+        "🚀 ~ file: apiContext.js ~ line 25 ~ fetchImages ~ response",
+        response.data
+      );
+    } catch (error) {
+      console.log(
+        "🚀 ~ file: apiContext.js ~ line 29 ~ getDogs ~ error",
+        error
+      );
+    }
   };
 
   return (
