@@ -7,21 +7,21 @@ import Home from "./components/Home";
 import Login from "./components/login/Login";
 import { UserStorage } from "./UserContext";
 
-const App = () => {
+function App() {
   return (
-    <div>
-      <UserStorage>
-        <BrowserRouter>
+    <main>
+      <BrowserRouter>
+        <UserStorage>
           <Header />
           <Routes>
-            <Route path="/" element={<Home />} />;
-            <Route path="/login/*" element={<Login />} />;
+            <Route path="/" element={<Home />} />
+            <Route path="/login/*" element={<Login />} />
           </Routes>
           <Footer />
-        </BrowserRouter>
-      </UserStorage>
-    </div>
+        </UserStorage>
+      </BrowserRouter>
+    </main>
   );
-};
+}
 
 export default App;

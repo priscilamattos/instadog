@@ -9,9 +9,9 @@ html {
     Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   --font-title: Georgia, 'Times New Roman', Times, serif;
   --font-size: 1.2rem;
-  --color: #19f;
-  --color-light: #adf;
-  --color-dark: #018;
+  --color: #ffc726;
+  --color-light: #fff791;
+  --color-dark: #eeb609;
   --radius: 0.2rem;
 }
 
