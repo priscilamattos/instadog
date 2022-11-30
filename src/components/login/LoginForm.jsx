@@ -4,13 +4,13 @@ import { Link } from "react-router-dom";
 
 import { TOKEN_POST } from "../../api";
 import { USER_GET } from "../../api";
-import UseForm from "../../hooks/UseForm";
+import UseForm from "../../hooks/useForm";
 import Button from "../forms/Button";
-import Error from "../Helper/Error";
-import Input from "../forms/Input";
-import { UserContext } from "./../../UserContext";
-import styles from "./../../css/LoginForm.module.css";
 import stylesBtn from "../forms/Button.module.css";
+import Input from "../forms/Input";
+import Error from "../Helper/Error";
+import styles from "./../../css/LoginForm.module.css";
+import { UserContext } from "./../../UserContext";
 
 const LoginForm = () => {
   const username = UseForm();
@@ -44,7 +44,7 @@ const LoginForm = () => {
       <div className={styles.signin}>
         <h2 className={styles.subtitle}>Sign In</h2>
         <p>Not a member? Sign Up</p>
-        <Link className={stylesBtn.button} to="/login/create">
+        <Link className={stylesBtn.button} to="/login/signup">
           Create Account
         </Link>
       </div>
