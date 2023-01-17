@@ -10,8 +10,7 @@ import LoginReset from "./LoginReset";
 
 const Login = () => {
   const { login } = React.useContext(UserContext);
-  console.log("🚀 ~ file: Login.jsx ~ line 12 ~ Login ~ login", login);
-  if (login === true) return <Navigate to="/profile" />;
+  if (login === true) return <Navigate to="/user" />;
   return (
     <section className={styles.login}>
       <div className={styles.forms}>
