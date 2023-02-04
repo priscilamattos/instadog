@@ -1,15 +1,18 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
-function Feed() {
+import FeedModal from "./FeedModal";
+import FeedPhotos from "./FeedPhotos";
+
+const Feed = () => {
+  const [modalPhoto, setModalPhoto] = React.useState(null);
   return (
     <div>
-      Feed
-      <Link to="post" className="">
-        POST
-      </Link>
+      {modalPhoto && (
+        <FeedModal photo={modalPhoto} setModalPhoto={setModalPhoto} />
+      )}
+      <FeedPhotos setModalPhoto={setModalPhoto} />
     </div>
   );
-}
+};
 
 export default Feed;
