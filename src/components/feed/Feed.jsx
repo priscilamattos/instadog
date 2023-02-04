@@ -1,15 +1,15 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
-function Feed() {
+import FeedModal from "./FeedModal";
+import FeedPhotos from "./FeedPhotos";
+
+const Feed = () => {
   return (
     <div>
-      Feed
-      <Link to="post" className="">
-        POST
-      </Link>
+      <FeedModal />
+      <FeedPhotos />
     </div>
   );
-}
+};
 
 export default Feed;
