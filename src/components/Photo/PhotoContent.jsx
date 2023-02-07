@@ -1,7 +1,9 @@
 import React from "react";
-import styles from "./../../css/PhotoContent.module.css";
 import { Link } from "react-router-dom";
+
+import styles from "./../../css/PhotoContent.module.css";
 import PhotoComments from "./PhotoComments";
+
 // import views from ".assets/visualizacao-black.svg";
 
 const PhotoContent = ({ data }) => {
