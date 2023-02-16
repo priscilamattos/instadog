@@ -29,10 +29,10 @@ const LoginForm = () => {
     <section className="animeLeft">
       <h1 className="title">Login</h1>
       <form className={styles.form} onSubmit={handleSubmit}>
-        <Input label="Usuário" type="text" name="username" {...username} />
-        <Input label="Senha" type="password" name="password" {...password} />
+        <Input label="User" type="text" name="username" {...username} />
+        <Input label="Password" type="password" name="password" {...password} />
         {loading ? (
-          <button disabled>Carregando...</button>
+          <button disabled>Loading...</button>
         ) : (
           <button>Entrar</button>
         )}
