@@ -1,11 +1,12 @@
 import React from "react";
 
 import Feed from "./feed/Feed";
+import Head from "./Helper/Head";
 
 const Home = () => {
   return (
     <section className="container mainContainer">
-      Home
+      <Head title="Photos" />
       <Feed />
     </section>
   );
