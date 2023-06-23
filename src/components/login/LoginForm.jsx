@@ -11,6 +11,7 @@ import Input from "../forms/Input";
 import Error from "../Helper/Error";
 import styles from "./../../css/LoginForm.module.css";
 import { UserContext } from "./../../UserContext";
+import Head from "../Helper/Head";
 
 const LoginForm = () => {
   const username = UseForm();
@@ -43,7 +44,7 @@ const LoginForm = () => {
       </Link>
       <div className={styles.signin}>
         <h2 className={styles.subtitle}>Sign In</h2>
-        <p>Not a member? Sign Up</p>
+        <p>Not a member? Sign Up.</p>
         <Link className={stylesBtn.button} to="/login/signup">
           Create Account
         </Link>
