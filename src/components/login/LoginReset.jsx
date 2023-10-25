@@ -1,9 +1,11 @@
-import React, { useEffect, useNavigate } from "react";
-import Input from "../forms/Input.jsx";
-import Button from "../forms/Button.jsx";
-import useForm from "../../hooks/useForm.jsx";
-import useFetch from "../../hooks/useFetch";
+import React, { useEffect } from "react";
+import { useNavigate } from 'react-router-dom'
+
 import { PASSWORD_RESET } from "../../api";
+import useFetch from "../../hooks/useFetch";
+import useForm from "../../hooks/useForm.jsx";
+import Button from "../forms/Button.jsx";
+import Input from "../forms/Input.jsx";
 import Error from "../Helper/Error";
 import Head from "../Helper/Head";
 
@@ -36,7 +38,7 @@ const LoginReset = () => {
   }
 
   return (
-    <section>
+    <section className="animeLeft">
       <Head title="Reset password" />
       <h1 className="title">Reset Password</h1>
       <form onSubmit={handleSubmit}>

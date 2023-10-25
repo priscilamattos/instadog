@@ -9,9 +9,9 @@ import Button from "../forms/Button";
 import stylesBtn from "../forms/Button.module.css";
 import Input from "../forms/Input";
 import Error from "../Helper/Error";
+import Head from "../Helper/Head";
 import styles from "./../../css/LoginForm.module.css";
 import { UserContext } from "./../../UserContext";
-import Head from "../Helper/Head";
 
 const LoginForm = () => {
   const username = UseForm();
@@ -37,7 +37,7 @@ const LoginForm = () => {
         ) : (
           <button>Entrar</button>
         )}
-        <Error error={error} />
+        <Error error={error && 'Invalid data.'} />
       </form>
       <Link className={styles.forgot} to="/login/forgot">
         Forgot password?

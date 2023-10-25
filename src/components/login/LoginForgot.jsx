@@ -1,9 +1,10 @@
 import React from "react";
-import Input from "../forms/Input.jsx";
-import Button from "../forms/Button.jsx";
-import useForm from "../../hooks/useForm.jsx";
-import useFetch from "../../hooks/useFetch";
+
 import { PASSWORD_LOST } from "../../api.js";
+import useFetch from "../../hooks/useFetch";
+import useForm from "../../hooks/useForm.jsx";
+import Button from "../forms/Button.jsx";
+import Input from "../forms/Input.jsx";
 import Error from "../Helper/Error.js";
 import Head from "../Helper/Head";
 
@@ -22,7 +23,7 @@ const LoginForgot = () => {
     }
   }
   return (
-    <section>
+    <section className="animeLeft">
       <Head title="Forgot password" />
       <h1 className="title">Forgot password?</h1>
       {data ? (
