@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { useNavigate } from 'react-router-dom'
+import { useNavigate } from "react-router-dom";
 
 import { PASSWORD_RESET } from "../../api";
 import useFetch from "../../hooks/useFetch";
@@ -40,7 +40,7 @@ const LoginReset = () => {
   return (
     <section className="animeLeft">
       <Head title="Reset password" />
-      <h1 className="title">Reset Password</h1>
+      <h1 className="title">Change your Password</h1>
       <form onSubmit={handleSubmit}>
         <Input
           label="New password"
