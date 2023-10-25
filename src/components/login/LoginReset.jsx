@@ -1,11 +1,11 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { useNavigate } from "react-router-dom";
 
 import { PASSWORD_RESET } from "../../api";
 import useFetch from "../../hooks/useFetch";
-import useForm from "../../hooks/useForm.jsx";
-import Button from "../forms/Button.jsx";
-import Input from "../forms/Input.jsx";
+import useForm from "../../hooks/useForm";
+import Button from "../forms/Button";
+import Input from "../forms/Input";
 import Error from "../Helper/Error";
 import Head from "../Helper/Head";
 

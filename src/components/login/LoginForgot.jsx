@@ -1,11 +1,11 @@
 import React from "react";
 
-import { PASSWORD_LOST } from "../../api.js";
+import { PASSWORD_LOST } from "../../api";
 import useFetch from "../../hooks/useFetch";
-import useForm from "../../hooks/useForm.jsx";
-import Button from "../forms/Button.jsx";
-import Input from "../forms/Input.jsx";
-import Error from "../Helper/Error.js";
+import useForm from "../../hooks/useForm";
+import Button from "../forms/Button";
+import Input from "../forms/Input";
+import Error from "../Helper/Error";
 import Head from "../Helper/Head";
 
 const LoginForgot = () => {
