@@ -1,4 +1,5 @@
-import React, { useEffect, useNavigate } from "react";
+import React, { useEffect } from "react";
+import { useNavigate } from 'react-router-dom'
 
 import { PASSWORD_RESET } from "../../api";
 import useFetch from "../../hooks/useFetch";
