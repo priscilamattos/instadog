@@ -1,12 +1,13 @@
+import PropTypes from "prop-types";
 import React from "react";
 
 import FeedModal from "./FeedModal";
 import FeedPhotos from "./FeedPhotos";
-import PropTypes from "prop-types";
 
 const Feed = ({ user }) => {
   const [modalPhoto, setModalPhoto] = React.useState(null);
   const [pages, setPages] = React.useState([1]);
+  // eslint-disable-next-line no-unused-vars
   const [infinite, setInfinite] = React.useState(true);
 
   React.useEffect(() => {

@@ -28,7 +28,7 @@ const PhotoContent = ({ data, single }) => {
             <Link to={`/profile/${photo.author}`}>@{photo.author}</Link>
             <span className={styles.views}>{photo.acessos}</span>
           </p>
-          <h1 className="title"></h1>
+          {/* <h1 className="title"></h1> */}
           <ul className={styles.attributes}>
             <li>{photo.peso} kg</li>
             <li>{photo.idade} years</li>

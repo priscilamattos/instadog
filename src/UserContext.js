@@ -1,6 +1,6 @@
 // import { getSuggestedQuery } from "@testing-library/react";
 import React from "react";
-import { createContext, useCallback, useEffect, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 import { TOKEN_POST, TOKEN_VALIDATE_POST } from "./api";
