@@ -10,6 +10,7 @@ import Photo from "./components/Photo/Photo";
 import User from "./components/user/User";
 import UserProfile from "./components/user/UserProfile";
 import { UserStorage } from "./UserContext";
+import "../src/App.css";
 
 function App() {
   return (
